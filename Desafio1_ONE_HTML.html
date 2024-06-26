@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de JavaScript com CSS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <h1>Boas Vindas ao Nosso Site!</h1>
+        <p>Por favor, preencha as informações a seguir.</p>
+        <script>
+            // Exibe uma mensagem de boas-vindas
+            alert("Boas vindas ao nosso site!");
+
+            // Declaração das variáveis
+            let nomeInicial = 'Lua';
+            let idadeInicial = 25;
+            let numeroDeVendas = 50;
+            let saldoDisponivel = 1000;
+            let mensagemDeErro = "Erro! Preencha todos os campos";
+
+            // Exibe a mensagem de erro
+            alert(mensagemDeErro);
+
+            // Pergunta o nome do usuário e armazena na variável 'nome'
+            let nome = prompt("Qual o seu nome?");
+
+            // Pergunta a idade do usuário e armazena na variável 'idade'
+            let idade = prompt("Digite a sua idade");
+
+            // Converte a idade para um número (pois o prompt retorna uma string)
+            idade = Number(idade);
+
+            // Verifica se a idade é maior ou igual a 18
+            if (idade >= 18) {
+                // Exibe um alerta com a mensagem "Pode tirar a habilitação"
+                alert("Pode tirar habilitação");
+            } else {
+                // Exibe um alerta com a mensagem "Ainda não pode tirar a habilitação"
+                alert("Ainda não pode tirar habilitação");
+            }
+        </script>
+    </div>
+</body>
+</html>
